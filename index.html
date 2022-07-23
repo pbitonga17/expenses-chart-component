@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Expenses chart component</title>
+</head>
+<body>
+    <main class="main">
+        <div class="my-balance">
+            <div class="text">
+                <p class="my-bal">My balance</p>
+                <h1 class="amount">$921.48</h2>
+            </div>
+            
+            <div class="logo">
+                <img src="./images/logo.svg" alt="" class="logo-img">
+            </div>
+        </div>
+
+        <div class="spending-chart">
+            <h2 class="spend">Spending - Last 7 days</h2>
+            <canvas id="spendChart"></canvas>
+            <hr>
+
+            <div class="total-month">
+                <div class="total-text">
+                    <p class="total">Total this month</p>
+                    <span class="amount">$478.33</span>
+                </div>
+
+                <div class="percentage">
+                    <span class="percent">2.4%</span>
+                    <p class="total">from last month</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
